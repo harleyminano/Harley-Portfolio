@@ -112,7 +112,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/key.png" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -122,7 +122,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/comp.png" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -259,7 +259,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
                             <p>Designed and implemented a program that can detect heart rate and recognize a subject's heart rate signal when comparing the signal to a database of multiple subjects' heart rate signals.  We used many technique which include Eulerian Magnification, Feature Tracking, PCA Decomposition and Dynamic Time Warping to help aid with this project</p>
                             <ul class="list-inline item-details">
                                 <li>Implementation:
-                                    <strong><a>Matlab</a>
+                                    <strong>Matlab
                                     </strong>
                                 </li>
                                 <li>Full Poster:
@@ -267,7 +267,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
                                     </strong>
                                 </li>
                                 <li>Development Time:
-                                    <strong><a>5 Months</a>
+                                    <strong>5 Months
                                     </strong>
                                 </li>
                                 <li>Project Video Overview:
@@ -294,21 +294,26 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Software Reverse Engineering to Bypass Registration</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/key.png" class="img-responsive img-centered" alt="">
+                            <p>Many free to use programs usually have a premium use option.  In this project, me and my team found a way using a dissasembler, IDA Pro,
+                              to locate the instruction that allows us to access the premium sections of the program.  After using the dissasembler to carefully
+                              locate where the instruction address is, we then use a hex editor, HxD, to alter the instruction allowing us to use the premium sections of
+                              the program.  Essentially most premium option programs have evolved making this method useless on some programs.  However it is still possible.
+                              In this project we used a basic keylogger to reverse engineer.
+                            </p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>Final Report Reference:
+                                    <strong><a href="https://drive.google.com/file/d/0B3K0BqTzmqONU2dUcWttVFpPSG05M181d0YzcDlBRlR1STdB/view?usp=sharing">PDF</a>
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <li>Implementation:
+                                    <strong>IDA Pro, x64dbg, HxD
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Development Time:
+                                    <strong>2 Weeks
                                     </strong>
                                 </li>
                             </ul>
@@ -331,21 +336,34 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Camera Calibration, Stero Reconstruction, Augmented Reality</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p></p>
+                            <img src="img/portfolio/comp.png" class="img-responsive img-centered" alt="">
+                            <p>Throughout this course, we have learned a lot of key concepts in Computer Vision. In this project, we
+                              are tasked with taking pictures within a static scene and reconstructing the scene in a point cloud.
+                              Doing this requires many methods to get a 3D point cloud. First we must calibrate our camera. After
+                              calibration, we detect features in a pair of images. Within those pairs of images, we find matching
+                              features points. Next we use those matching feature points and our camera parameters to find the
+                              fundamental matrix. Finding the fundamental matrix then lets us find the camera pose of the images.
+                              From the camera pose we can get our camera matrices in which we can triangulate to get our 3D world
+                              points. And lastly from 3D points we can reconstruct our point cloud. Another part of this project is to
+                              detect a checkerboard in a scene and place a 3D wire frame cube. This requires some methods as well.
+                              For this problem we first obtain our Intrinsic and extrinsic parameters from our camera calibration. We
+                              use those parameters to create a camera matrix in which we can find 2D image points from our 3D wire
+                              frame cube points we made up. After finding the 2D image points, we overlay the images to create an
+                              augmented reality scene. In this project the language we used to code this all up is Matlab. This
+                              project used the reference of the math works matlab website to help accomplish this task.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <li>Implementation:
+                                    <strong>Matlab, OpenCV
                                     </strong>
                                 </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                <li>Development Time:
+                                    <strong>3 Weeks
                                     </strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Full Paper w/ Code:
+                                    <strong><a href="https://drive.google.com/file/d/0B3K0BqTzmqONMUVFTkhQQlAzdkU/view?usp=sharing">PDF</a>
                                     </strong>
                                 </li>
                             </ul>
